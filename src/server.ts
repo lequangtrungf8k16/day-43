@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import router from "./routes/auth.route";
+import router from "./routes";
 
 const PORT: number = 3000;
 const server = express();
@@ -12,7 +12,7 @@ server.get("/", (req: Request, res: Response) => {
 });
 
 // Xử lý xác thực routes
-server.use("/api/auth", router);
+server.use("/api", router);
 
 // Xử lý route không tồn tại
 server.use((req: Request, res: Response) => {

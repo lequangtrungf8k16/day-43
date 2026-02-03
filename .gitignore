@@ -1,5 +1,6 @@
 # npm
 node_modules
+dist
 npm-shrinkwrap.json
 *.log
 *.gz
